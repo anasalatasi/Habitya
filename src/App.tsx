@@ -1,12 +1,14 @@
+import { Provider } from 'react-redux'
 import './App.css'
+import store from './store/store';
 
 function App() {
 
   return (
-      <div>
-      Hello
-      </div>
-  )
+      <Provider store={store}>
+        <div>Hello</div>
+      </Provider>
+  );
 }
 
 export default App
